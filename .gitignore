@@ -135,3 +135,7 @@ cstool/cstool
 
 # android
 android-ndk-*
+
+# bazel
+*-bazel
+*.bazel.lock

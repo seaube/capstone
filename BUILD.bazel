@@ -1,0 +1,10 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+package(default_visibility = ["//visibility:public"])
+
+cc_library(
+    name = "capstone",
+    includes = ["include", "include/capstone"],
+    hdrs = glob(["include/**/*.h"]),
+    srcs = glob(["*.c", "*.h", "arch/**/*.c", "arch/**/*.h", "arch/**/*.inc"]),
+)
